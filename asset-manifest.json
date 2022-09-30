@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4626cf67.css",
+    "main.js": "/static/js/main.611551de.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/4cars-cover.png": "/static/media/4cars-cover.962c37753c194f8fc15d.png",
+    "static/media/pokedex-cover.png": "/static/media/pokedex-cover.f2b6549c9ee9daa88618.png",
+    "static/media/4cars-cover-sm.png": "/static/media/4cars-cover-sm.04f80da3bb7a2d1b80be.png",
+    "static/media/astromatch1.png": "/static/media/astromatch1.5c3bd0a213ddde0b9452.png",
+    "static/media/me2.jpg": "/static/media/me2.20a63f35b3f69d24f4ac.jpg",
+    "static/media/labex-cover.png": "/static/media/labex-cover.88278f8f53906c4d4e0f.png",
+    "static/media/labeddit-cover.png": "/static/media/labeddit-cover.10c1e8dfa8545b0981c7.png",
+    "static/media/labex-cover-sm.png": "/static/media/labex-cover-sm.9d4e3dd99278048f9e2a.png",
+    "static/media/github-brands.svg": "/static/media/github-brands.022db3ae71b7f7388d8a9835ca7fded2.svg",
+    "static/media/github.svg": "/static/media/github.171b179b9abcd796dce0204e58bb5c5f.svg",
+    "index.html": "/index.html",
+    "static/media/icons8-github.svg": "/static/media/icons8-github.1387a3553fbf5bb3aea3462eb1d221ad.svg",
+    "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.c81e49155aded38c0fbe10d98d63504b.svg",
+    "static/media/circle-solid.svg": "/static/media/circle-solid.50e57fe6adb81bc8678367cd58dbb745.svg",
+    "main.4626cf67.css.map": "/static/css/main.4626cf67.css.map",
+    "main.611551de.js.map": "/static/js/main.611551de.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4626cf67.css",
+    "static/js/main.611551de.js"
+  ]
+}
