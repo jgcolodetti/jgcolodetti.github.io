@@ -1,0 +1,418 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* #gradient-canvas {
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #c3e4ff; 
+  --gradient-color-2: #6ec3f4; 
+  --gradient-color-3: #eae2ff;  
+  --gradient-color-4: #b9beff;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.project-card-ifuture {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/ifuture-cover.png');
+  background-color: #1495a7;
+  background-size: contain;
+  width: 280px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-ifuture::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 0s ease-in 0s;
+  opacity: 1;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-title {
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.project-card-description {
+  position: absolute;
+  bottom: 10%;
+  z-index: 2;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+.project-card-github {
+  opacity: 0;
+  position: absolute;
+  bottom: 55%;
+  z-index: 2;
+}
+
+.project-card-ifuture:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+.project-card-ifuture:hover >.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+  
+}
+
+.project-card-ifuture:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-ifuture:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.project-card-labex {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/labex-cover.png');
+  background-color: #1495a7;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-labex::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-labex:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+
+}
+
+.project-card-labex:hover>.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-card-labex:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-labex:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.project-card-pokedex {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/pokedex-cover.png');
+  background-color: #1495a7;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-pokedex::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-pokedex:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+
+}
+
+.project-card-pokedex:hover>.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-card-pokedex:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-pokedex:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.project-card-labeddit {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/labeddit-cover.png');
+  background-color: #1495a7;
+  background-size: contain;
+  width: 280px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-labeddit::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 0s ease-in 0s;
+  opacity: 1;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-labeddit:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+.project-card-labeddit:hover >.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-card-labeddit:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-labeddit:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.project-card-astromatch {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/astromatch1.png');
+  background-color: #1495a7;
+  background-size: contain;
+  width: 280px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-astromatch::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all 0s ease-in 0s;
+  opacity: 1;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-astromatch:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+
+.project-card-astromatch:hover >.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-card-astromatch:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-astromatch:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.project-card-landingpage {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 32px;
+  background-image: url('./img/4cars-cover.png');
+  background-color: #1495a7;
+  background-size: cover;
+  width: 800px;
+  height: 500px;
+  z-index: 0;
+}
+
+.project-card-landingpage::after {
+  content: "";
+  position: absolute;
+  border-radius: 32px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  transition: all .4s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  background: linear-gradient(360deg, #1495a7 0, rgba(0, 54, 135, .3) 120.95%);
+}
+
+.project-card-landingpage:hover::after {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+
+}
+
+.project-card-landingpage:hover>.project-card-title {
+  transform: translateY(-20px);
+  transition: all 0.4s ease-in 0s;
+  z-index: 2;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.project-card-landingpage:hover>.project-card-description {
+  transform: translateY(15px);
+  opacity: 1;
+  transition: all 0.4s ease-in 0s;
+  cursor: pointer;
+}
+
+.project-card-landingpage:hover>.project-card-github {
+  opacity: 1;
+  transition: all .4s ease-in 0s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .project-card-labex {
+    width: 280px;
+    background-image: url('./img/labex-cover-sm.png');
+  }
+
+  .project-card-pokedex {
+    width: 280px;
+  }
+
+  .project-card-landingpage {
+    width: 280px;
+    background-image: url('./img/4cars-cover-sm.png');
+
+  }
+}
